@@ -1,0 +1,8 @@
+.cardLevel {
+    background: #A6F3D6;
+    height: 60%;
+    width: 40%;
+    color: #07377A;
+    display: flex;
+    justify-content: center;
+}
