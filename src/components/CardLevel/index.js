@@ -1,19 +1,28 @@
-import styles from "./CardLevel.module.css"
+import styles from "./CardLevel.module.css";
+import faseImage1 from "../../assets/images/levelSelection/fase1.png";
+import arrowImage from "../../assets/images/levelSelection/Group.png" 
+
 
 function CardLevel({props}){
     return (
-        <div className={styles.cardLevel}>
-            <div>
-                <image />
+        <section className={styles.cardLevel}>
+            <div 
+                className={styles.container}
+            >
+                <img className={styles.imageFaseFormat} src={faseImage1} alt="Imagem de seleção de Fase"/>
             </div>
-            <div>
+            <div
+                className={styles.textContainer}
+            >
                 <h1>FASE texto</h1>
                 <p>Texto</p>
             </div>
-            <div>
-                <image />
+            <div
+                className={styles.container}
+            >
+                <img className={styles.imageArrowFormat} src={arrowImage} alt="Imagem de seleção de Fase"/>
             </div>
-        </div>
+        </section>
     );
 }
 

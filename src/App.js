@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <h1>Hello World!</h1>
-      <CardLevel></CardLevel>
+      <CardLevel image="fase1" />
       <Button>Olá Mundo!</Button>
     </>
      
