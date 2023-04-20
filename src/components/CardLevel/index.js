@@ -1,27 +1,30 @@
 import styles from "./CardLevel.module.css";
-import faseImage1 from "../../assets/images/levelSelection/fase1.png";
 import arrowImage from "../../assets/images/levelSelection/Group.png" 
+import { Link } from "react-router-dom";
 
 
-function CardLevel(){
+function CardLevel({props, imageCard, routesProperties
+}){
     return (
         <div className={styles.cardLevel}>
-            <div 
-                className={styles.container}
-            >
-                <img className={styles.imageFase} src={faseImage1} alt="Imagem de seleção de Fase"/>
-            </div>
-            <div
-                className={styles.textContainer}
-            >
-                <h1>FASE texto</h1>
-                <p>Texto</p>
-            </div>
-            <div
-                className={styles.container}
-            >
-                <img className={styles.imageArrowFormat} src={arrowImage} alt="Imagem de seleção de Fase"/>
-            </div>
+            <Link to={routesProperties}>
+                <div 
+                    className={styles.container}
+                >
+                    <img className={styles.imageFase} src={imageCard.imagePhase} alt={imageCard.textAlternative}/>
+                </div>
+                <div
+                    className={styles.textContainer}
+                >
+                    <h1>FASE {`${props.phase}`}</h1>
+                    <p>{`${props.textPhase}`}</p>
+                </div>
+                <div
+                    className={styles.container}
+                >
+                    <img className={styles.imageArrowFormat} src={arrowImage} alt="Imagem de seleção de Fase"/>
+                </div>
+            </Link>
         </div>
     );
 }

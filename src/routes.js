@@ -8,6 +8,7 @@ function AppRoutes() {
             <Routes>
                 <Route path="/" element={ <Home /> }></Route>
                 <Route path="/phaseselection" element={ <PhaseSelection /> }></Route>
+                <Route path="/phase1-1" ></Route>
             </Routes>
         </BrowserRouter>
     );
