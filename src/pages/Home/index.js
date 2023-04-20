@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Home() {
     return (
         <>
-            <body className={styles.container}>
+            <body className={styles.screen}>
                 <img className={styles.homeScreenImg} src={homeScreen} alt="Imagem da página Home" />
                 <h1 className={styles.textTitle}>COLORINDO COM NÚMEROS</h1>
                 <h2 className={styles.textSubtitle}>Representação de Imagens</h2>

@@ -9,18 +9,21 @@
 }
 
 .screen {
-  background: #E5E5E5;
-}
-
-.title {
-  margin: 0 0 20px 0;
-  font-size: xx-large;
+    background: #FFFFFF;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  
-  align-items: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-  
+
+.imageLeft {
+    height: 8vh;
+    rotate: 180deg;
+}
+
+.imageRigth {
+    height: 8vh;
+}

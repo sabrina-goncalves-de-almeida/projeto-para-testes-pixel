@@ -8,11 +8,8 @@
     color: #07377A;
 }
 
-body {
+.screen {
     background: #A6F3D6;
-}
-
-.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
