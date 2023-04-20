@@ -3,13 +3,13 @@ import faseImage1 from "../../assets/images/levelSelection/fase1.png";
 import arrowImage from "../../assets/images/levelSelection/Group.png" 
 
 
-function CardLevel({props}){
+function CardLevel(){
     return (
-        <section className={styles.cardLevel}>
+        <div className={styles.cardLevel}>
             <div 
                 className={styles.container}
             >
-                <img className={styles.imageFaseFormat} src={faseImage1} alt="Imagem de seleção de Fase"/>
+                <img className={styles.imageFase} src={faseImage1} alt="Imagem de seleção de Fase"/>
             </div>
             <div
                 className={styles.textContainer}
@@ -22,7 +22,7 @@ function CardLevel({props}){
             >
                 <img className={styles.imageArrowFormat} src={arrowImage} alt="Imagem de seleção de Fase"/>
             </div>
-        </section>
+        </div>
     );
 }
 

@@ -1,10 +1,10 @@
-import CardLevel from "./components/CardLevel";
+// import CardLevel from "./components/CardLevel";
 
 function PhaseSelection() {
   return (
     <>
       <h1>Seleção de Fases</h1>
-      <CardLevel image="fase1" />
+      {/* <CardLevel /> */}
     </>
      
   );
