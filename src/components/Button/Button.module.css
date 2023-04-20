@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,500&display=swap');
+
 .choiceButton {
     background: #07377A;
     color: #FFFFFF;
+    height: 3rem;
+    width: 25%;
+    margin: 3rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    font-size:x-large;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
