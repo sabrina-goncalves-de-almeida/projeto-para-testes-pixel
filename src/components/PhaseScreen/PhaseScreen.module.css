@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #07377A;
+}
+
+.screen {
+    background: #FFFFFF;
+}
+
+@keyframes animatedTransition {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+/* 
+@keyframes animatedOut {
+    0%{right: 0;}
+    100%{right: 1000px;}
+}
+   */
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+}
+
+.question {
+    height: 100vh;
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation-name: animatedTransition;
+    animation-duration: 0.5s;
+    /* animation-name: animatedOut;
+    animation-duration: 3s; */
+}
+
+.image1 {
+    height: 50vh;
+}
+
+.imageLeft {
+    height: 8vh;
+    rotate: 180deg;
+}
+
+.imageRigth {
+    height: 8vh;
+}
