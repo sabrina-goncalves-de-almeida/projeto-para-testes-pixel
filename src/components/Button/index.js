@@ -1,8 +1,8 @@
 import styles from "./Button.module.css";
 
-function Button(){
+function Button({text}){
     return (
-        <button className={styles.choiceButton}>Olá Mundo!</button>
+        <button className={styles.choiceButton}>{text}</button>
     );
 }
 
