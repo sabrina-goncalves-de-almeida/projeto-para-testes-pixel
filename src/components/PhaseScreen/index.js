@@ -5,7 +5,13 @@ import { Link } from "react-router-dom";
 function PhaseScreen({props, routesProperties}) {
     return (
         <div className={styles.container}>
-            <div ></div>
+            <div className={styles.clickArea}>
+                <Link to={routesProperties.buttonRight} className={styles.clickAreaRight} >
+                </Link>
+                {/* Ainda fica por cima do botão de pasar para próxima tela */}
+                <Link to={routesProperties.buttonLeft} className={styles.clickAreaLeft}>
+                </Link>
+            </div>
             <Link to={routesProperties.buttonLeft}>
                 <img className={styles.imageLeft} src={arrowImage} alt="Botão para voltar para a tela anterior"/>
             </Link>
@@ -16,7 +22,6 @@ function PhaseScreen({props, routesProperties}) {
             <Link to={routesProperties.buttonRight}>
                 <img className={styles.imageRigth} src={arrowImage} alt="Botão para ir para a próxima tela"/>
             </Link>
-            <div ></div>
         </div>
     );
 }

@@ -28,6 +28,34 @@
     background: #FFFFFF;
 }
 
+
+.clickArea {
+    position: absolute;
+    background: #ffffff00;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.clickAreaLeft {
+    position: absolute;
+    background: #ffffff00;
+    width: 20%;
+    height: 100%;
+    z-index: 0;
+}
+
+.clickAreaRight {
+    position: absolute;
+    background: #ffffff00;
+    left: 77%;
+    width: 20%;
+    height: 100%;
+    z-index: 0;
+}
+
 .question {
     height: 100vh;
     width: 40%;
@@ -38,21 +66,26 @@
     align-items: center;
     animation-name: animatedTransition;
     animation-duration: 0.5s;
+    z-index: 1;
     /* animation-name: animatedOut;
     animation-duration: 3s; */
 }
 
 .image1 {
     height: 50vh;
+    z-index: 3;
+
 }
 
 .imageLeft {
     height: 8vh;
     rotate: 180deg;
+    z-index: 3;
 }
 
 .imageRigth {
     height: 8vh;
+    z-index: 4;
 }
 
 @media (max-width: 500px ) {    
