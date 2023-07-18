@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from "./PhaseSelection.module.css";
 import CardLevel from "../../components/CardLevel";
 import imagePhase1 from "../../assets/images/levelSelection/fase1.png";

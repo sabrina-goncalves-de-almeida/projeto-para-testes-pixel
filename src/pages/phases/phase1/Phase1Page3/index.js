@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from "./Phase1Page3.module.css";
 import phase1Image3 from "../../../../assets/images/phases/phase1/phase-1-image-3.png";
 import PhaseScreen from "../../../../components/PhaseScreen";
