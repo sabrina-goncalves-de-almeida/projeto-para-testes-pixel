@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from "./CardLevel.module.css";
 import arrowImage from "../../assets/images/levelSelection/Group.png" 
 import { Link } from "react-router-dom";
