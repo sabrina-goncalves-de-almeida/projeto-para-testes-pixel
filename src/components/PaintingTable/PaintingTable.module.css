@@ -1,0 +1,21 @@
+.paintingTable {
+    display: grid;
+    grid-template-columns: repeat(5, 24vh);
+    grid-template-rows: repeat(5, 5vw);
+    gap: 1rem;
+}
+
+.pixels {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: 10px solid #07377A;
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    color: brown;
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #07377A;
+}
+
+@keyframes animatedTransition {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+  
+/* 
+@keyframes animatedOut {
+    0%{right: 0;}
+    100%{right: 1000px;}
+}
+   */
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: larger;
+    background: #A6F3D6;
+}
+
+
+.clickArea {
+    position: absolute;
+    background: #ffffff00;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.clickAreaLeft {
+    position: absolute;
+    background: #ffffff00;
+    width: 20%;
+    height: 100%;
+    z-index: 0;
+}
+
+.clickAreaRight {
+    position: absolute;
+    background: #ffffff00;
+    left: 77%;
+    width: 20%;
+    height: 100%;
+    z-index: 0;
+}
+
+.question {
+    height: 100vh;
+    width: 40%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation-name: animatedTransition;
+    animation-duration: 0.5s;
+    z-index: 1;
+    /* animation-name: animatedOut;
+    animation-duration: 3s; */
+}
+
+.image1 {
+    height: 50vh;
+    z-index: 3;
+
+}
+
+.imageLeft {
+    height: 8vh;
+    rotate: 180deg;
+    z-index: 3;
+}
+
+.imageRigth {
+    height: 8vh;
+    z-index: 4;
+}
+
+@media (max-width: 500px ) {    
+    .question {
+        height: 100vh;
+        width: 60%;
+    }
+    
+    .clickArea {
+        width: 90%;
+    }
+
+    .clickAreaRight {
+        width: 15%;
+        left: 85%;
+    }
+
+    .image1 {
+        height: 30vh;
+    }
+    
+    .imageLeft {
+        height: 5vh;
+        rotate: 180deg;
+    }
+    
+    .imageRigth {
+        height: 5vh;
+    }
+}
